@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESAKI Automation (Pvt) Ltd</title>
+  <meta name="description" content="Industrial automation products and solutions from ESAKI Automation (Pvt) Ltd, Sri Lanka.">
+
+  <style>
+    :root {
+      --navy: #071b33;
+      --orange: #f58220;
+      --white: #ffffff;
+      --light: #f3f6fa;
+      --text: #263548;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+   
+.container {
+  width: min(1140px, 90%);
+  margin: 0 auto;
+}
+
+
+    
+/* Professional ESAKI header */
+header {
+    background: #071B33;
+    color: #FFFFFF;
+    padding: 16px 0;
+    border-bottom: 3px solid #F58220;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-height: 80px;
+    padding: 12px 4%;
+    box-sizing: border-box;
+
+    /* Premium ESAKI navy background */
+    background-color: #071B33;
+
+    /* Professional industrial pattern */
+    background-image:
+        radial-gradient(
+            circle at 15% 50%,
+            rgba(255, 134, 64, 0.12),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(56, 130, 190, 0.12),
+            transparent 32%
+        ),
+        linear-gradient(
+            30deg,
+            transparent 48%,
+            rgba(255, 255, 255, 0.035) 49%,
+            transparent 50%
+        ),
+        linear-gradient(
+            150deg,
+            transparent 48%,
+            rgba(255, 255, 255, 0.035) 49%,
+            transparent 50%
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        36px 60px,
+        36px 60px;
+
+   border-bottom: 4px solid rgba(18, 59, 96, 0.10);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+
+
+.brand-logo {
+    display: block;
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 5px;
+    border: 3px solid #ff8640;
+    outline: 4px solid #0b2448;
+    outline-offset: 2px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.28);
+    flex-shrink: 0;
+}
+
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 16px;
+}
+
+.brand-text strong {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.brand-text small {
+  color: #ff8620;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.brand-tagline {
+  color: #dce6f2;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ff8a1d;
+}
+
+
+    
+
+
+
+.hero {
+    
+background:
+    radial-gradient(circle at 85% 25%, rgba(255, 255, 255, 0.07) 0, transparent 28%),
+    linear-gradient(135deg, #0B2440 0%, #17466B 55%, #28648A 100%);
+
+    color: var(--white);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+    .hero-content {
+      max-width: 720px;
+    }
+
+    .eyebrow {
+      color: var(--orange);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 62px);
+      line-height: 1.12;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      color: #e1eaf3;
+      max-width: 620px;
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 5px 8px 5px 0;
+    }
+
+    .button-primary {
+      background: var(--orange);
+      color: var(--navy);
+    }
+
+    .button-outline {
+      border: 1px solid #ffffff;
+      color: var(--white);
+    }
+
+    section {
+      padding: 68px 0;
+    }
+
+    .section-heading {
+      color: var(--navy);
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+
+    .section-intro {
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+
+    .about {
+      background: var(--light);
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    
+.product {
+    background: linear-gradient(145deg, #ffffff 0%, #f5f8fc 100%);
+    border: 1px solid #dce4ee;
+    border-top: 4px solid var(--orange);
+    border-radius: 12px;
+    padding: 26px 23px;
+    box-shadow: 0 4px 14px rgba(7, 27, 51, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease,
+                border-color 0.25s ease;
+}
+.product img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 26px rgba(7, 27, 51, 0.12);
+    border-color: var(--orange);
+}
+
+
+    .product h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .contact .section-heading {
+      color: var(--white);
+    }
+
+    .contact a {
+      color: var(--white);
+      overflow-wrap: anywhere;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin: 25px 0;
+      
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+
+.social-links a {
+  display: inline-block;
+  padding: 12px 22px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #ff8a00;
+  border-radius: 8px;
+  color: #ff8a00;
+  background-color: #082746;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.social-links a:hover {
+  background: #ff8a00;
+  color: #ff8a00;
+  transform: translateY(-2px);
+}
+    }
+    footer {
+      background: #041120;
+      color: #d4deea;
+      text-align: center;
+      padding: 22px 0;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    header .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+
+.hero {
+    background: linear-gradient(
+        135deg,
+        #071b33 0%,
+        #123b60 60%,
+        #071b33 100%
+    );
+    color: #ffffff;
+    padding: 64px 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+
+    }
+    /* MOBILE HOME PAGE FIX */
+@media screen and (max-width: 700px) {
+
+  header .container.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 20px 12px;
+    gap: 15px;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .brand-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+  }
+
+  .brand-text {
+    width: 100%;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .brand-text strong {
+    display: block;
+    font-size: 21px;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+
+  .brand-text small {
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .brand-tagline {
+    display: block;
+    font-size: 13px;
+  }
+
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .hero {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 48px 20px;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 9vw, 52px);
+    line-height: 1.1;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      
+
+<a class="brand" href="#home">
+  <img src="images/esaki-logo.png"
+     alt="ESAKI Automation Logo"
+     class="brand-logo">
+  <span class="brand-text">
+    <strong>ESAKI AUTOMATION (PVT) LTD</strong>
+    <small>INDUSTRIAL AUTOMATION SOLUTIONS</small>
+    <span class="brand-tagline">Precision • Reliability • Innovation</span>
+  </span>
+</a>
+
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="eyebrow">Industrial Automation Solutions</div>
+        <h1>Powering Industry Through Automation</h1>
+        <p>
+          Explore industrial automation products and control solutions
+          from ESAKI Automation (Pvt) Ltd.
+        </p>
+        <a class="button button-primary" href="#products">Explore Products</a>
+        <a class="button button-outline" href="#contact">Contact Our Team</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-heading">About ESAKI Automation</h2>
+        <p class="section-intro">
+          ESAKI Automation (Pvt) Ltd provides industrial automation
+          products and solutions for control and industrial applications.
+          Contact our team to learn more about our products.
+        </p>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <h2 class="section-heading">Our Products</h2>
+        <p class="section-intro">
+          Discover our range of industrial automation and control products.
+          Contact us for product information and availability.
+        </p>
+
+        <div class="products">
+          <article class="product">
+            <img src="images/sensors.jfif" alt="Industrial Sensors">
+            <h3>Industrial Sensors</h3>
+            <p>Sensing products for industrial applications.</p>
+          </article>
+
+          <article class="product">
+            <img src="images/plc & automation.jfif" alt="PLC and automation">
+            <h3>PLC & Automation</h3>
+            <p>Programmable control and automation solutions.</p>
+          </article>
+
+          <article class="product">
+           <img src="images/valves.jfif" alt="Pneumatic valves"> 
+            <h3>Pneumatic Solenoid Valves</h3>
+            <p>Control components for pneumatic systems.</p>
+          </article>
+
+          <article class="product">
+            <img src="images/push buttons and switches.jfif" alt="Push buttons and switches">
+            <h3>Push Buttons & Switches</h3>
+            <p>Industrial control and switching components.</p>
+          </article>
+
+          <article class="product">
+            <img src="images/gear motors.jfif" alt="Gear motors">
+            <h3>Gear Motors & Timing Belts</h3>
+            <p>Components for industrial motion and drive systems.</p>
+          </article>
+
+          <article class="product">
+            <img src="images/vfd, ssrs.jfif" alt="VFDs and controllers">
+            <h3>VFDs, SSRs & Controllers</h3>
+            <p>Drive, switching and temperature control products.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-heading">Contact ESAKI</h2>
+        <p>Contact our team for product enquiries and assistance.</p>
+
+        <div class="contact-list">
+          <p>Phone: <a href="tel:+94770358781">077 035 8781</a></p>
+          <p>Email: <a href="mailto:info@esakiautomation.com">info@esakiautomation.com</a></p>
+          <p>Address: 50/5 Hokandara South, Hokandara, Sri Lanka</p>
+        </div>
+
+        <a class="button button-primary"
+           href="https://wa.me/94770358781"
+           target="_blank" rel="noopener noreferrer">
+          Chat on WhatsApp
+        </a>
+
+        <p style="margin-top: 22px;">
+<a href="https://maps.app.goo.gl/dtx6H8noATDFJR6t7" target="_blank" rel="noopener">
+         Find us on Google Maps </a>
+        </p>
+        
+<div class="social-links">
+  <a href="https://www.facebook.com/share/1cXEgPd8v8/"
+     target="_blank" rel="noopener noreferrer">Facebook</a><br>
+
+  <a href="https://www.instagram.com/esakiautomation/"
+     target="_blank" rel="noopener noreferrer">Instagram</a>
+</div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> ESAKI Automation (Pvt) Ltd. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
